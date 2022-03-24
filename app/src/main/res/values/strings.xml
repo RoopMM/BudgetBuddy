@@ -14,5 +14,7 @@
     <string name="login">Login</string>
     <string name="username">Username</string>
     <string name="email">Email</string>
+    <string name="add_new_budget">Add New Budget</string>
+    <string name="budget_name">Budget Name</string>
 
 </resources>
