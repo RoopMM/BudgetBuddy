@@ -1,125 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    tools:context=".RegisterActivity">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="37dp"
-        android:layout_height="41dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="223dp"
-        android:src="@drawable/app_logo" />
+        android:layout_height="0dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintBottom_toTopOf="@+id/budget_budd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/budget_budd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginBottom="47dp"
         android:fontFamily="@font/comfortaa"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Budget Buddy"
-        android:textAppearance="@style/budget_budd" />
+        android:text="@string/register"
+        android:textAppearance="@style/budget_budd"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TableRow>
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/password_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budget_budd"
+        tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="@string/email"
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/border"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_et"
+        tools:ignore="MissingConstraints" />
 
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-            <EditText
-                android:id="@+id/email_et"
-                android:layout_width="210dp"
-                android:layout_height="wrap_content"
-
-                />
-
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="@string/username"
-
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-            <EditText
-                android:id="@+id/username_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                />
-
-        </TableRow>
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Password"
-
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-            <EditText
-                android:id="@+id/password_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                />
-
-        </TableRow>
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Confirm Password"
-
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-            <EditText
-                android:id="@+id/confirmPassword_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                />
-
-        </TableRow>
-        <Space
-            android:layout_height="20dp">
-
-        </Space>
-
-        <Button
-            android:id="@+id/register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#050505"
-            android:text="REGISTER" />
-    </TableLayout>
-
-    <TextView
+    <Button
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account?"
-        android:textColor="#1168AE" />
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="241dp"
+        android:background="@color/black"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_et" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

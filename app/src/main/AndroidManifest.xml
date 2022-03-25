@@ -21,7 +21,7 @@
 
         </activity>
 
-        <activity android:name=".AddBudgetActivity"
+        <activity android:name=".RegisterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

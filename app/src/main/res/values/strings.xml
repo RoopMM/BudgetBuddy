@@ -16,5 +16,9 @@
     <string name="email">Email</string>
     <string name="add_new_budget">Add New Budget</string>
     <string name="budget_name">Budget Name</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="next">NEXT</string>
+    <string name="register">Register</string>
 
 </resources>
