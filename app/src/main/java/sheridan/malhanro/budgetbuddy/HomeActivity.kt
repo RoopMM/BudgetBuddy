@@ -24,6 +24,10 @@ class HomeActivity:AppCompatActivity() {
 
         firebaseAuth= FirebaseAuth.getInstance()
         checkUser()
+        binding.button2.setOnClickListener {
+            startActivity(Intent(this, AddBudgetActivity::class.java))
+
+        }
     }
 
     private fun checkUser() {

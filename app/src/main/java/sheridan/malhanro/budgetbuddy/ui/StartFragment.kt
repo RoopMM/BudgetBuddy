@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil.setContentView
 import sheridan.malhanro.budgetbuddy.R
+import sheridan.malhanro.budgetbuddy.RegisterActivity
+import sheridan.malhanro.budgetbuddy.databinding.ActivityHomeBinding
+import sheridan.malhanro.budgetbuddy.databinding.ActivityMainBinding
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -18,18 +22,24 @@ class StartFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val view: View = inflater.inflate(R.layout.fragment_start, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_start, container, false)
+        return view
+
     }
 
     companion object {

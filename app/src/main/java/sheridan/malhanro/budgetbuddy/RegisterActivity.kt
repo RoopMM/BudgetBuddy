@@ -31,20 +31,22 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         actionBar = supportActionBar!!
+
         actionBar.title = "Register"
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
 //
         progressDialog = ProgressDialog(this)
-//        progressDialog.setTitle("Please Wait...")
+        progressDialog.setTitle("Please Wait...")
 //        progressDialog.setMessage("Creating Account...")
         progressDialog.setCanceledOnTouchOutside(false)
 
         firebaseAuth = FirebaseAuth.getInstance()
-//        binding.textView4.setOnClickListener {
-//            startActivity(Intent(this,LoginActivity::class.java))
-//        }
+        binding.textView4.setOnClickListener {
+            startActivity(Intent(this,LoginActivity::class.java))
+        }
         binding.btn.setOnClickListener {
             validateData()
         }
@@ -86,8 +88,8 @@ class RegisterActivity : AppCompatActivity() {
             }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return super.onSupportNavigateUp()
-    }
+//    override fun onSupportNavigateUp(): Boolean {
+//        onBackPressed()
+//        return super.onSupportNavigateUp()
+//    }
 }

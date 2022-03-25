@@ -3,17 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/border.xml" value="0.1905" />
         <entry key="app/src/main/res/drawable/rectanlge_4.xml" value="0.3065" />
-        <entry key="app/src/main/res/layout/activity_add.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_add.xml" value="0.2936802973977695" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.19777425130208337" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.15527950310559005" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.26499328613281237" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.14367816091954022" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_start.xml" value="0.12858428955078127" />
+        <entry key="app/src/main/res/layout/fragment_start.xml" value="0.25" />
       </map>
     </option>
   </component>

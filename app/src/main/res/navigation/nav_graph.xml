@@ -8,7 +8,14 @@
         android:id="@+id/startFragment"
         android:name="sheridan.malhanro.budgetbuddy.ui.StartFragment"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_startFragment_to_login"
+            app:destination="@id/login" />
+    </fragment>
     <fragment
         android:id="@+id/register"
         android:name="sheridan.malhanro.budgetbuddy.ui.Register"
