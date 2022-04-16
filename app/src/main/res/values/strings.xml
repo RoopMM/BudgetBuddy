@@ -20,5 +20,6 @@
     <string name="already_have_an_account_login">Already have an account? Login</string>
     <string name="next">NEXT</string>
     <string name="register">Register</string>
+    <string name="my_profile">MY PROFILE</string>
 
 </resources>

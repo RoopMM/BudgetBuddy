@@ -40,7 +40,6 @@ class RegisterActivity : AppCompatActivity() {
 //
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Please Wait...")
-//        progressDialog.setMessage("Creating Account...")
         progressDialog.setCanceledOnTouchOutside(false)
 
         firebaseAuth = FirebaseAuth.getInstance()
@@ -72,7 +71,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun firebaseRegister() {
         progressDialog.show()
-        firebaseAuth.createUserWithEmailAndPassword(email, password)
+        firebaseAuth.createUserWithEmailAndPassword(email, password )
             .addOnSuccessListener {
                 progressDialog.dismiss()
                 val firebaseUser = firebaseAuth.currentUser

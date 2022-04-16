@@ -22,10 +22,15 @@ class HomeActivity:AppCompatActivity() {
         actionBar= supportActionBar!!
         actionBar.title= "Home"
 
+
         firebaseAuth= FirebaseAuth.getInstance()
         checkUser()
         binding.button2.setOnClickListener {
             startActivity(Intent(this, AddBudgetActivity::class.java))
+        }
+
+        binding.imageButton3.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
 
         }
     }
@@ -34,7 +39,6 @@ class HomeActivity:AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
             val email = firebaseUser.email
-            binding.textView7.text = email
 
         }
         else
