@@ -30,8 +30,8 @@
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/comfortaa"
         android:text="@string/budget_name"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/budget_name"
+        app:layout_constraintStart_toStartOf="@+id/budget_name"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="HardcodedText,MissingConstraints" />
 
@@ -42,13 +42,13 @@
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/comfortaa"
         android:text="Budget"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/amount"
+        app:layout_constraintStart_toStartOf="@+id/amount"
+        app:layout_constraintTop_toBottomOf="@+id/budget_name"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/budget_name"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="43dp"
@@ -62,7 +62,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/amount"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:autofillHints="Eg. Bus Fare"
@@ -86,6 +86,6 @@
         android:layout_marginBottom="236dp"
         android:text="NEXT"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintEnd_toEndOf="@+id/amount"
+        app:layout_constraintTop_toBottomOf="@+id/amount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
