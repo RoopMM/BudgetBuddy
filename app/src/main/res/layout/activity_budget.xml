@@ -11,9 +11,9 @@
         android:layout_width="39dp"
         android:layout_height="0dp"
         android:layout_marginTop="59dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginBottom="529dp"
         android:src="@drawable/app_logo"
-        app:layout_constraintBottom_toTopOf="@+id/tv"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,5 +44,16 @@
         app:layout_constraintBottom_toTopOf="@+id/budget_data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="49dp"
+        android:text="See Chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
