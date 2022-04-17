@@ -1,5 +1,6 @@
 package sheridan.malhanro.budgetbuddy
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.Toast
@@ -30,6 +31,8 @@ class AddBudgetActivity :AppCompatActivity(){
             val amount = binding.amount.text.toString()
 
             saveFirestore(budgetName, amount)
+            startActivity(Intent(this, BudgetActivity::class.java))
+
 
         }
     }

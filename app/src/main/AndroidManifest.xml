@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="sheridan.malhanro.budgetbuddy">
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:name=".BudgetBuddyApplication"
         android:allowBackup="true"
@@ -12,12 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BudgetBuddy">
         <activity
+            android:name=".BudgetActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".AddBudgetActivity" />
