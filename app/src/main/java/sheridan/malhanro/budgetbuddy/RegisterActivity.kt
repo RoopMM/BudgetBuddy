@@ -10,11 +10,17 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import org.w3c.dom.Text
 import sheridan.malhanro.budgetbuddy.databinding.ActivityRegisterBinding
+import sheridan.malhanro.budgetbuddy.ui.RegisterDirections
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -23,6 +29,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
     private var email = ""
     private var password = ""
+    private lateinit var navController: NavController
 
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -31,13 +38,6 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        actionBar = supportActionBar!!
-
-        actionBar.title = "Register"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
-//
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Please Wait...")
         progressDialog.setCanceledOnTouchOutside(false)
@@ -46,8 +46,12 @@ class RegisterActivity : AppCompatActivity() {
         binding.textView4.setOnClickListener {
             startActivity(Intent(this,LoginActivity::class.java))
         }
+
         binding.btn.setOnClickListener {
             validateData()
+        }
+        binding.backToLogin.setOnClickListener{
+
         }
     }
 

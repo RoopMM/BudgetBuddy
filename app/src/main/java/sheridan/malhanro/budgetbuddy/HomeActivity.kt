@@ -19,8 +19,7 @@ class HomeActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        actionBar= supportActionBar!!
-        actionBar.title= "Home"
+
 
 
         firebaseAuth= FirebaseAuth.getInstance()

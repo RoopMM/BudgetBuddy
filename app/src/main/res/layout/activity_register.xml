@@ -68,6 +68,7 @@
 
     <ImageButton
         android:id="@+id/btn"
+        style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_marginStart="25dp"
@@ -83,13 +84,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
-        android:layout_marginEnd="96dp"
         android:layout_marginBottom="28dp"
         android:minHeight="48dp"
-        android:text="Already have an account? Login"
+        android:text="Already have an account?"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_et" />
+
+    <TextView
+        android:id="@+id/backToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-125dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="65dp"
+        android:text="L͟o͟g͟i͟n͟ "
         app:layout_constraintBottom_toTopOf="@+id/btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/password_et"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/password_et" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
