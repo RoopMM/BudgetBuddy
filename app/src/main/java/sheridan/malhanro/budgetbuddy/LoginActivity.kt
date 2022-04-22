@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import sheridan.malhanro.budgetbuddy.databinding.ActivityLoginBinding
+import sheridan.malhanro.budgetbuddy.databinding.ActivityRegisterBinding
 
 class LoginActivity: AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -23,7 +24,7 @@ class LoginActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_login)
+        setContentView(binding.root)
 
 
 
@@ -33,7 +34,7 @@ class LoginActivity: AppCompatActivity() {
         progressDialog.setCanceledOnTouchOutside(false)
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
-
+        validateData()
         binding.textView4.setOnClickListener {
             startActivity(Intent(this,RegisterActivity::class.java))
         }

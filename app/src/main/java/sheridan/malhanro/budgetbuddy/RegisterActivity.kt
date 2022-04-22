@@ -43,9 +43,9 @@ class RegisterActivity : AppCompatActivity() {
         progressDialog.setCanceledOnTouchOutside(false)
 
         firebaseAuth = FirebaseAuth.getInstance()
-        binding.textView4.setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
-        }
+//        binding.textView4.setOnClickListener {
+//            startActivity(Intent(this,LoginActivity::class.java))
+//        }
 
         binding.btn.setOnClickListener {
             validateData()
