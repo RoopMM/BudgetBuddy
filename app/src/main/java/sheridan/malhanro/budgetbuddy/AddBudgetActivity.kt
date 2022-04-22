@@ -17,11 +17,11 @@ class AddBudgetActivity :AppCompatActivity(){
     private lateinit var binding: ActivityAddBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        actionBar = supportActionBar!!
-
-        actionBar.title = "Add Budget"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
+//        actionBar = supportActionBar!!
+//
+//        actionBar.title = "Add Budget"
+//        actionBar.setDisplayHomeAsUpEnabled(true)
+//        actionBar.setDisplayShowHomeEnabled(true)
         super.onCreate(savedInstanceState)
         binding = ActivityAddBinding.inflate(layoutInflater)
         setContentView(binding.root)

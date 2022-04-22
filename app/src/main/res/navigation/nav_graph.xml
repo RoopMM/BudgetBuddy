@@ -17,7 +17,11 @@
         android:id="@+id/login"
         android:name="sheridan.malhanro.budgetbuddy.ui.Login"
         android:label="fragment_login"
-        tools:layout="@layout/activity_login" />
+        tools:layout="@layout/activity_login" >
+        <action
+            android:id="@+id/action_login_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
     <fragment
         android:id="@+id/startFragment"
         android:name="sheridan.malhanro.budgetbuddy.ui.StartFragment"
@@ -30,4 +34,29 @@
             android:id="@+id/action_startFragment_to_login"
             app:destination="@id/login" />
     </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="sheridan.malhanro.budgetbuddy.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="sheridan.malhanro.budgetbuddy.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+    <activity
+        android:id="@+id/addBudgetActivity"
+        android:name="sheridan.malhanro.budgetbuddy.AddBudgetActivity"
+        android:label="activity_add"
+        tools:layout="@layout/activity_add" />
+    <activity
+        android:id="@+id/budgetActivity"
+        android:name="sheridan.malhanro.budgetbuddy.BudgetActivity"
+        android:label="activity_budget"
+        tools:layout="@layout/activity_budget" />
+    <activity
+        android:id="@+id/chartActivity"
+        android:name="sheridan.malhanro.budgetbuddy.ChartActivity"
+        android:label="activity_chart"
+        tools:layout="@layout/activity_chart" />
 </navigation>

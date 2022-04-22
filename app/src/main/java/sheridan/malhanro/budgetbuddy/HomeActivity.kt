@@ -28,7 +28,6 @@ class HomeActivity:AppCompatActivity() {
 
         binding.imageButton3.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
-
         }
     }
 
@@ -36,7 +35,6 @@ class HomeActivity:AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
             val email = firebaseUser.email
-
         }
         else
         {

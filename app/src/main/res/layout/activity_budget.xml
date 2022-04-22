@@ -20,14 +20,16 @@
 
     <TextView
         android:id="@+id/budget_data"
-        android:layout_width="232dp"
-        android:layout_height="159dp"
-        android:layout_marginBottom="233dp"
+        android:layout_width="238dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/comfortaa"
         android:gravity="center"
         android:text="Budget Data"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv" />
 
@@ -35,14 +37,12 @@
         android:id="@+id/tv"
         android:layout_width="387dp"
         android:layout_height="134dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/comfortaa"
         android:gravity="center_horizontal|center_vertical"
         android:text="My Budget Data"
         android:textAppearance="@style/budget_budd"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/budget_data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -57,6 +57,5 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

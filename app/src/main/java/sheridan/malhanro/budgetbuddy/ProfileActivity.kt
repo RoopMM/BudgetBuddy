@@ -15,11 +15,11 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        actionBar = supportActionBar!!
-
-        actionBar.title = "My Profile"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
+//        actionBar = supportActionBar!!
+//
+//        actionBar.title = "My Profile"
+//        actionBar.setDisplayHomeAsUpEnabled(true)
+//        actionBar.setDisplayShowHomeEnabled(true)
         super.onCreate(savedInstanceState)
 
         binding = ActivityProfileBinding.inflate(layoutInflater)
