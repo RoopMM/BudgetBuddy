@@ -20,8 +20,6 @@ class HomeActivity:AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         firebaseAuth= FirebaseAuth.getInstance()
         checkUser()
         binding.button2.setOnClickListener {

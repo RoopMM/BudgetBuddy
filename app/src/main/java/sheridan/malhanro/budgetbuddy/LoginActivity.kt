@@ -25,8 +25,7 @@ class LoginActivity: AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_login)
 
-        actionBar= supportActionBar!!
-        actionBar.title= "Login"
+
 
         progressDialog = ProgressDialog(this)
 //        progressDialog.setTitle("Please Wait...")

@@ -51,7 +51,7 @@ class RegisterActivity : AppCompatActivity() {
             validateData()
         }
         binding.backToLogin.setOnClickListener{
-
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 
