@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="39dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="59dp"
+        android:layout_width="37dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="529dp"
         android:src="@drawable/app_logo"
         app:layout_constraintBottom_toTopOf="@+id/button3"
@@ -33,14 +33,15 @@
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="138dp"
-        android:layout_height="0dp"
+        android:layout_width="387dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="130dp"
         android:fontFamily="@font/comfortaa"
         android:gravity="center_horizontal|center_vertical"
         android:text="My Budget Data"
         android:textAppearance="@style/budget_budd"
-        android:textSize="16sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/budget_data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,12 +49,14 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="144dp"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="49dp"
+        android:background="#000000"
         android:text="See Chart"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

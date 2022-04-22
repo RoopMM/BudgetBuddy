@@ -1,91 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AddBudgetActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="37dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/app_logo" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="213dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="126dp"
+        android:layout_width="369dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="62dp"
         android:fontFamily="@font/comfortaa"
         android:gravity="center"
         android:text="@string/add_new_budget"
         android:textColor="#0E0D0D"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:textSize="48sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/comfortaa"
         android:text="@string/budget_name"
-        app:layout_constraintBottom_toTopOf="@+id/budget_name"
-        app:layout_constraintStart_toStartOf="@+id/budget_name"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/budget_name"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/border" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/comfortaa"
         android:text="Budget"
-        app:layout_constraintBottom_toTopOf="@+id/amount"
-        app:layout_constraintStart_toStartOf="@+id/amount"
-        app:layout_constraintTop_toBottomOf="@+id/budget_name"
-        tools:ignore="HardcodedText,MissingConstraints" />
-
-    <EditText
-        android:id="@+id/budget_name"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="23dp"
-        android:background="@drawable/border"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints" />
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/amount"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:autofillHints="Eg. Bus Fare"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="373dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="22dp"
+        android:autofillHints="Eg. Bus Fare"
         android:background="@drawable/border"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:hint="  $0.0" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="109dp"
-        android:autofillHints="$0"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal|center_vertical"
         android:layout_marginBottom="236dp"
+        android:autofillHints="$0"
+        android:background="#000000"
         android:text="NEXT"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/amount"
-        app:layout_constraintTop_toBottomOf="@+id/amount" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="#FFFFFF" />
+</LinearLayout>
