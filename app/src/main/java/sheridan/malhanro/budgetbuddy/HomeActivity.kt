@@ -29,6 +29,9 @@ class HomeActivity:AppCompatActivity() {
         binding.imageButton3.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
+        binding.button4.setOnClickListener {
+            startActivity(Intent(this, InvestmentActivity::class.java))
+        }
     }
 
     private fun checkUser() {

@@ -49,26 +49,24 @@
         android:textColor="#100F0F"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="47dp"
-        android:fontFamily="@font/comfortaa"
-        android:gravity="center"
-        android:text="Don't worry. Add a new Budget. We'll manage everything for you"
-        android:textColor="#000000" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="259dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20sp"
         android:background="#050505"
         android:text="Add New Budget"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20sp"
+        android:background="#050505"
+        android:text="Investment Options"
         android:textColor="#FFFFFF" />
 
     <ImageButton
@@ -76,7 +74,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:src="@drawable/profile" />
 
 </LinearLayout>

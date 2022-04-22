@@ -59,4 +59,9 @@
         android:name="sheridan.malhanro.budgetbuddy.ChartActivity"
         android:label="activity_chart"
         tools:layout="@layout/activity_chart" />
+    <activity
+        android:id="@+id/investmentActivity"
+        android:name="sheridan.malhanro.budgetbuddy.InvestmentActivity"
+        android:label="activity_investment"
+        tools:layout="@layout/activity_investment" />
 </navigation>
