@@ -32,6 +32,10 @@ class HomeActivity:AppCompatActivity() {
         binding.button4.setOnClickListener {
             startActivity(Intent(this, InvestmentActivity::class.java))
         }
+        binding.button5.setOnClickListener {
+            startActivity(Intent(this, RetirementActivity::class.java))
+        }
+
     }
 
     private fun checkUser() {
